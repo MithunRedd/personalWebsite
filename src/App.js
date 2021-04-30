@@ -2,39 +2,48 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import "@fontsource/poppins/500.css"
+import ThemeToggler from './ThemeToggler';
+import HomePage from './components/Home';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
+      
+      <Box textAlign="center" fontFamily="poppins" fontSize={["sm", "md", "lg", "xl"]}>
+        <Grid minH="100vh"
+          p={1}
+          gap={1}
+          autoFlow="row dense"
+          templateColumns={{
+          base: '1fr',
+          md: 'repeat(1, 1fr)',
+          lg: 'repeat(1, 1fr)',
+        }}>
+          <ThemeToggler />
+          <HomePage />
         </Grid>
+
+        <Box
+          minH="100vh"
+          maxW="1500px"
+          marginX="auto"
+          py={4}
+          px={2}
+          position="relative"
+          textAlign="center"
+        >
+          <Nav />
+          
+        </Box>
+       
       </Box>
+       <Footer />
     </ChakraProvider>
   );
 }
