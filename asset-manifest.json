@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/personalWebsite/static/js/main.3d50df63.chunk.js",
+    "main.js.map": "/personalWebsite/static/js/main.3d50df63.chunk.js.map",
+    "runtime-main.js": "/personalWebsite/static/js/runtime-main.8ac74797.js",
+    "runtime-main.js.map": "/personalWebsite/static/js/runtime-main.8ac74797.js.map",
+    "static/css/2.3b239ebe.chunk.css": "/personalWebsite/static/css/2.3b239ebe.chunk.css",
+    "static/js/2.ac32218b.chunk.js": "/personalWebsite/static/js/2.ac32218b.chunk.js",
+    "static/js/2.ac32218b.chunk.js.map": "/personalWebsite/static/js/2.ac32218b.chunk.js.map",
+    "index.html": "/personalWebsite/index.html",
+    "static/css/2.3b239ebe.chunk.css.map": "/personalWebsite/static/css/2.3b239ebe.chunk.css.map",
+    "static/js/2.ac32218b.chunk.js.LICENSE.txt": "/personalWebsite/static/js/2.ac32218b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/personalWebsite/static/media/poppins-latin-ext-400-normal.53f1614b.woff2",
+    "static/media/500.css": "/personalWebsite/static/media/poppins-latin-ext-500-normal.64676cfe.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ac74797.js",
+    "static/css/2.3b239ebe.chunk.css",
+    "static/js/2.ac32218b.chunk.js",
+    "static/js/main.3d50df63.chunk.js"
+  ]
+}
